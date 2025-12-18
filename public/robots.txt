@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://eij.com.ua/sitemap.xml

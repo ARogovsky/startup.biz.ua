@@ -1,0 +1,52 @@
+html
+  font-size: 1rem
+  font-weight: normal
+  font-display: auto
+  font-smooth: always
+
+body
+  width: 100%
+  max-width: 100% !important
+  height: auto
+  min-height: 100vh
+  font-size: 90%
+  font-family: $basic
+  font-weight: 300
+  line-height: 1.6
+  overflow-x: hidden
+
+.content
+  display: block
+  min-height: 80vh
+  padding: 120px 0 16vh
+  +v-md
+    min-height: auto
+  +v-sm
+    padding-top: 80px
+  +v-xs
+    padding: 80px 0
+
+a
+  text-decoration: none
+  color: inherit
+  transition: all ease-out .3s
+  &:hover
+    color: $blue
+
+hr
+  color: #f3f4f5
+  border-top: #f3f4f5 solid
+  opacity: 1
+  margin: 2.75rem 0 2.25rem
+
+img
+  width: auto
+  max-width: 100%
+  +v-md
+    height: auto
+    object-fit: cover
+
+h1,
+h2,
+h3
+  font-weight: 400

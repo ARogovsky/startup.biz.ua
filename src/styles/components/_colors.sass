@@ -1,0 +1,123 @@
+// Mixins for repeated styles
+=cc($color)
+  color: $color !important
+
+=bg($color)
+  background-color: $color !important
+
+=bc($color)
+  border-style: solid
+  border-color: $color !important
+
+// Colors
+.c
+  &-white
+    +cc($white)
+  &-dark
+    +cc($dark)
+  &-blue
+    +cc($blue)
+  &-pink
+    +cc($pink)
+  &-violet
+    +cc($violet)
+  &-light
+    +cc($light)
+  &-grey
+    +cc($grey)
+  &-orange
+    +cc($orange)
+  &-yellow
+    +cc($yellow)
+  &-green
+    +cc($green)
+  &-theme
+    +cc($theme)
+  &-hero
+    +cc($hero)
+  &-medium
+    +cc($medium)
+  &-dblue
+    +cc($dblue)
+  &-lpink
+    +cc($lpink)
+  &-red
+    +cc($red)
+
+// Background Colors
+.bg
+  &-white
+    +bg($white)
+  &-dark
+    +bg($dark)
+  &-blue
+    +bg($blue)
+  &-light
+    +bg($light)
+  &-grey
+    +bg($grey)
+  &-pink
+    +bg($pink)
+  &-orange
+    +bg($orange)
+  &-yellow
+    +bg($yellow)
+  &-green
+    +bg($green)
+  &-theme
+    +bg($theme)
+  &-hero
+    +bg($hero)
+  &-medium
+    +bg($medium)
+  &-dblue
+    +bg($dblue)
+  &-bprice
+    +bg($bprice)
+  &-vprice
+    +bg($vprice)
+  &-gprice
+    +bg($gprice)
+  &-red
+    +bg($red)
+  &-violet
+    +bg($violet)
+
+// Border Colors
+.bc
+  &-white
+    +bc($white)
+  &-dark
+    +bc($dark)
+  &-blue
+    +bc($blue)
+  &-light
+    +bc($light)
+  &-grey
+    +bc($grey)
+  &-pink
+    +bc($pink)
+  &-orange
+    +bc($orange)
+  &-yellow
+    +bc($yellow)
+  &-green
+    +bc($green)
+  &-theme
+    +bc($theme)
+  &-hero
+    +bc($hero)
+  &-medium
+    +bc($medium)
+  &-dblue
+    +bc($dblue)
+  &-red
+    +bc($red)
+  &-violet
+    +bc($violet)
+
+.b-none
+  border: none !important
+
+.bg-tr
+  background-color: transparent !important
