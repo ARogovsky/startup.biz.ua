@@ -7,7 +7,7 @@ import { PageTitle } from '@/components/elements/PageTitle'
 import { VacancyCard } from '@/components/elements/Cards/VacancyCard'
 import { Footer } from '@/components/Footer'
 import { Input, Select, Pagination } from 'antd'
-import { Vacancy } from '@/utils/markdownParser'
+import { Vacancy } from '@/lib/airtable'
 
 const ITEMS_PER_PAGE = 12
 
