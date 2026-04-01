@@ -1,0 +1,252 @@
+*
+  font-family: $basic
+
+// Width & Height classes (percentage)
+@for $i from 0 through 300
+  $width: $i * 1%
+  $height: $i * 1vh
+  .w-#{$i}
+    width: $width !important
+    min-width: $width !important
+    max-width: $width !important
+    display: block
+  .h-#{$i}
+    height: $height !important
+    min-height: $height !important
+    max-height: $height !important
+    display: block
+
+// Width & Height classes (pixels)
+@for $i from 0 through 1000
+  $width: $i * 1px
+  $height: $i * 1px
+  .w-p-#{$i}
+    width: $width !important
+    min-width: $width !important
+    max-width: $width !important
+  .h-p-#{$i}
+    height: $height !important
+    min-height: $height !important
+    max-height: $height !important
+
+// Padding & Margin classes (Pixels)
+@for $i from 0 through 300
+  $padding: $i * 1px
+  $margin: $i * 1px
+  .p
+    &-l-#{$i}
+      padding-left: $padding
+    &-r-#{$i}
+      padding-right: $padding
+    &-t-#{$i}
+      padding-top: $padding
+    &-b-#{$i}
+      padding-bottom: $padding
+    &-x-#{$i}
+      padding-left: $padding
+      padding-right: $padding
+    &-y-#{$i}
+      padding-top: $padding
+      padding-bottom: $padding
+  .m
+    &-l-#{$i}
+      margin-left: $margin
+    &-r-#{$i}
+      margin-right: $margin
+    &-t-#{$i}
+      margin-top: $margin
+    &-b-#{$i}
+      margin-bottom: $margin
+    &-x-#{$i}
+      margin-left: $margin
+      margin-right: $margin
+    &-y-#{$i}
+      margin-top: $margin
+      margin-bottom: $margin
+
+// Spacer classes
+@for $i from 0 through 300
+  .s-#{$i}
+    $height: $i * 1px
+    height: $height !important
+    clear: both
+    display: block
+    +v-sm
+      $height: $i * 1px
+      height: $height * 0.5 !important
+
+// Font size classes
+@for $i from 0 through 100
+  .fz-#{$i}
+    $size: $i * 1px
+    font-size: $size !important
+
+// Font weight classes
+@for $i from 100 through 900
+  .fw-#{$i}
+    $size: $i * 1
+    font-weight: $size !important
+
+// Line height classes
+@for $i from 100 through 500
+  .lh-#{$i}
+    $size: $i * .001
+    display: inline-block
+    line-height: $size !important
+
+// Border Width
+@for $i from 0 through 24
+  .bw-#{$i}
+    $size: $i * 1px
+    border-width: $size !important
+
+// Border Radius
+@for $i from 0 through 300
+  .r-#{$i}
+    $size: $i * 1px
+    border-radius: $size !important
+
+// Font Family
+
+.ff
+  &-intro
+    font-family: $intro !important
+  &-basic
+    font-family: $basic !important
+
+// Margin auto classes
+.ma
+  margin-left: auto !important
+  margin-right: auto !important
+.mla
+  margin-left: auto !important
+.mra
+  margin-right: auto !important
+
+// Object fit classes
+.obfc
+  object-fit: cover
+
+// Responsive width class
+.wide
+  +v-sm
+    min-width: 90% !important
+    margin-left: auto
+    margin-right: auto
+
+// Flex alignment classes
+.aic
+  align-items: center !important
+.aifs
+  align-items: flex-start !important
+.aife
+  align-items: flex-end !important
+
+// Flex justify classes
+.jcc
+  justify-content: center !important
+.jcfs
+  justify-content: flex-start !important
+.jcfe
+  justify-content: flex-end !important
+.jcsa
+  justify-content: space-around !important
+.jcsb
+  justify-content: space-between !important
+
+// Center class
+.center
+  justify-content: center !important
+
+// Text alignment classes
+.tl
+  text-align: left !important
+.tr
+  text-align: right !important
+  +v-sm
+    text-align: center !important
+.tc
+  text-align: center !important
+
+// Flex flow class
+.rowrap
+  flex-flow: row wrap
+
+// Overflow class
+.oh
+  overflow: hidden
+
+// Display classes
+.flex
+  display: flex
+
+// Text transform class
+.upp
+  text-transform: uppercase
+
+// Mobile display class
+.m
+  &-block
+    +v-sm
+      display: block !important
+      margin-bottom: 24px
+    .info
+      +v-sm
+        display: block
+        margin: 0 0 16px
+  &-show
+    display: none !important
+    +v-sm
+      display: block !important
+    img
+      +v-xs
+        width: 80% !important
+        min-width: 80% !important
+        max-width: 80% !important
+        margin-left: auto !important
+        margin-right: auto !important
+  &-hide
+    display: block !important
+    +v-sm
+      display: none !important
+  &-center
+    +v-sm
+      justify-content: center !important
+      text-align: center !important
+      margin-left: auto !important
+      margin-right: auto !important
+  &-aic
+    +v-sm
+      align-items: center !important
+  &-m-b-24
+    +v-sm
+      margin-bottom: 24px !important
+  &-m-b-40
+    +v-sm
+      margin-bottom: 40px !important
+  &-p-x-16
+    +v-sm
+      padding-left: 24px !important
+      padding-right: 24px !important
+  &-order
+    &-1
+      +v-sm
+        order: 1 !important
+    &-2
+      +v-sm
+        order: 2 !important
+
+#top
+  .m-center
+    +v-xs
+      &.flex
+        display: block
+        text-align: center
+        a
+          width: 90%
+          margin: 8px auto
+
+#achievements
+  .m-aic
+    &.p-x-32
+      padding-left: 80px
